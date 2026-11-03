@@ -4,6 +4,12 @@
 
 Questly is a gamified task management mobile application built with React Native and Expo. It makes everyday productivity more engaging through quests, experience points, priorities, and reminders.
 
+## 🚀 Android Build
+
+**Expo EAS Build:** [View Questly Android Build](https://expo.dev/accounts/pratheeksha2903/projects/SmartToDoApp/builds/386254e0-4fcc-4878-bc95-babccb77fe13)
+
+Visit the build page to view the Android build status and available artifacts. If an APK artifact is available, you can download it for installation on a compatible Android device.
+
 ## ✨ Features
 
 - **Quest Management** — Create, edit, and delete quests.
@@ -12,7 +18,7 @@ Questly is a gamified task management mobile application built with React Native
 - **Level Progression** — Track your progress as you gain XP.
 - **Due Dates and Times** — Set deadlines for quests.
 - **Reminders** — Configure notifications for upcoming deadlines.
-- **Progress Tracking** — View your quest completion and productivity statistics.
+- **Progress Tracking** — View quest completion and productivity statistics.
 - **Dark UI** — A dark-themed interface with a gamified visual design.
 
 ## 🛠️ Tech Stack
@@ -62,7 +68,9 @@ Follow the terminal instructions to open the app in your configured Android deve
 
 ## 📱 Android Build
 
-Questly can be built for Android using Expo Application Services (EAS).
+Questly uses Expo Application Services (EAS) to build Android applications.
+
+To create a new preview build:
 
 ```bash
 npm install --global eas-cli
@@ -70,7 +78,7 @@ eas login
 eas build --platform android --profile preview
 ```
 
-The build profile must be configured to generate an APK for direct Android installation.
+Ensure that `eas.json` is configured with an appropriate Android build profile. Set `"buildType": "apk"` if you want an APK for direct installation.
 
 ## 📂 Project Structure
 
